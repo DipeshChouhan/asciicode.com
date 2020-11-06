@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main>
+        <header>
+
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <div class="container">
+
+
+            <section id="about" class="about-section">
+
+                <div class="about-personal">
+
+                    <p>Hey I am a Programmer. Intermediate in everything. Here are some of my skills, work and contact
+                        info.</p>
+                </div>
+                <div class="about-skills">
+                    <h2>My Skills</h2>
+                    <div class="skill">
+
+                        <p class="skill-title">Web development</p>
+                        <div class="bar">
+                            <span class="inner-bar w-50" style="width: 50%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+
+                        <p class="skill-title">Android development</p>
+                        <div class="bar">
+                            <span class="inner-bar w-62" style="width: 62%;"></span>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+
+                        <p class="skill-title">Desktop development</p>
+                        <div class="bar">
+                            <span class="inner-bar w-45" style="width: 45%;"></span>
+                        </div>
+                    </div>
+                    <div class="skill">
+
+                        <p class="skill-title">Algorithms & Data-structures</p>
+                        <div class="bar">
+                            <span class="inner-bar w-70" style="width: 70%;"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="work" class="work-section">
+                <p class="work-section-text">I have worked on too many projects.</p>
+                <div class="work-cards">
+                    <div class="work-card">
+                        <p class="work-card-title">Web projects</p>
+                        <ul>
+                            <li>FreeCodeCamp projects</li>
+                            <li>Personal projecs</li>
+                            <li>One commercial website</li>
+                        </ul>
+                    </div>
+                    <div class="work-card">
+                        <p class="work-card-title">Android porjects</p>
+                        <ul>
+                            <li>Created more than 30 apps</li>
+                            <li>Create libraries</li>
+                            <li>Two commercial apps</li>
+                        </ul>
+                    </div>
+                    <div class="work-card">
+                        <p class="work-card-title">Desktop projects</p>
+                        <ul>
+                            <li>Create many utility apps</li>
+                            <li>A command line app</li>
+                            <li>Library management system</li>
+                        </ul>
+                    </div>
+                    <div class="work-card">
+                        <p class="work-card-title">Algorithms projects</p>
+                        <ul>
+                            <li>Completed hackerearth code monk</li>
+                            <li>Participated in many contests</li>
+                            <li>Sloved more than 200 problems</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="contact" class="contact">
+                <p class="contact-title">Contact me</p>
+                <form action="send.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email...">
+                    <input type="submit" class="btn">
+                </form>
+            </section>
+            <footer>
+                <p id="copyright_txt">&copy; Copyright 2018, Example Corporation</p>
+            </footer>
+        </div>
+
+    </main>
+
+    <script>
+        document.getElementById("copyright_txt").innerHTML = "&copy; Copyright "+new Date().getFullYear()+", <a href='https://github.com/CoronaMatrix' target=_blank>CoronaMatrix</a>";
+    </script>
+
+</body>
+
+</html>
